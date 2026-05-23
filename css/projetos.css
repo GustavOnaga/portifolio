@@ -1,0 +1,18 @@
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}

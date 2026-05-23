@@ -1,0 +1,1 @@
+console.log("Carousel pronto para expansão futura.");

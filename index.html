@@ -3,197 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Onaga | Portfólio de Dados</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gustavo Onaga | Portfólio</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/formacao.css">
+    <link rel="stylesheet" href="css/certificacoes.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
-    <div class="container">
-        
-        <!-- SECTION 1: HEADER (NOME, CARGOS, BADGES) -->
-        <header>
-            <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=250&text=Gustavo%20Onaga&fontSize=48&fontColor=ffffff&stroke=ffffff&animation=fadeIn&colorA=0F172A&colorB=7C3AED&desc=Analytics%20Engineer%20%7C%20Data%20Analytics&descAlignY=70" />
-            
-            <div class="badges" style="margin-top: 25px;">
-                <img src="https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL" />
-                <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
-                <img src="https://img.shields.io/badge/Looker_Studio-4285F4?style=for-the-badge&logo=looker&logoColor=white" alt="Looker" />
-                <img src="https://img.shields.io/badge/Metabase-509EE3?style=for-the-badge&logo=metabase&logoColor=white" alt="Metabase" />
-                <img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" alt="dbt" />
-                <img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" alt="Databricks" />
-                <img src="https://img.shields.io/badge/AI_Agents-00A699?style=for-the-badge&logo=openai&logoColor=white" alt="AI Agents" />
-            </div>
-        </header>
+    <div id="header-section"></div>
+    <div id="sobre-section"></div>
+    <div id="projetos-section"></div>
+    <div id="formacao-section"></div>
+    <div id="certificacoes-section"></div>
+    <div id="footer-section"></div>
 
-        <!-- SECTION 2: SOBRE MIM -->
-        <section id="sobre">
-            <h2>👤 Sobre Mim</h2>
-            <p class="about-text">
-                Profissional formado em Engenharia Biomédica pela Universidade Federal do ABC (UFABC), com pós graduação em Data Analytics (FIAP). Possuo experiência em analytics, modelagem de dados e geração de insights para tomada de decisão. Atuei em diversos setores, como metalúrgico, seguros, people analytics e, atualmente, no mercado de validação de identidade, conectando áreas de negócio e tecnologia para transformar dados em informação útil para diferentes stakeholders.
-            </p>
-        </section>
+    <script src="js/loadSections.js"></script>
+    <script src="js/carousel.js"></script>
 
-        <!-- SECTION 3: PROJETOS -->
-        <section id="projetos">
-            <h2>📂 Projetos em Destaque</h2>
-            <table class="projects-grid">
-                <tr>
-                    <!-- CARD 1: ANALYTICS ENGINEER -->
-                    <td class="project-card">
-                        <h3>🚀 Modelagem e ETL de Ecommerce</h3>
-                        <span class="tag-cargo tag-ae">Analytics Engineer</span>
-                        <p class="project-obj">
-                            Centralização de dados brutos e construção de camadas dimensionais utilizando dbt para criar uma fonte única da verdade sobre faturamento corporativo.
-                        </p>
-                        <div class="project-stack">
-                            <code>SQL</code><code>dbt</code><code>Databricks</code>
-                        </div>
-                        <a href="https://github.com/GustavOnaga/dbt_ecommerce" target="_blank" class="project-link">Ver Repositório →</a>
-                    </td>
-
-                    <!-- CARD 2: DATA ANALYST -->
-                    <td class="project-card">
-                        <h3>📊 Dashboard Histórico de Diabetes</h3>
-                        <span class="tag-cargo tag-da">Data Analyst</span>
-                        <p class="project-obj">
-                            Desenvolvimento de um painel estratégico para monitoramento de comportamento de pacientes com potencial de apresentar diabetes.
-                        </p>
-                        <div class="project-stack">
-                            <code>SQL</code><code>Looker Studio</code>
-                        </div>
-                        <a href="https://datastudio.google.com/u/0/reporting/0d10cd44-a6bf-4cc7-b8ca-df3dea6896b5/page/lyQjF" target="_blank" class="project-link">Ver Dashboard →</a>
-                    </td>
-
-                    <!-- CARD 3: DATA ANALYST -->
-                    <td class="project-card">
-                        <h3>🤖 Agente de IA para dados de RH</h3>
-                        <span class="tag-cargo tag-da">Data Analyst</span>
-                        <p class="project-obj">
-                            Agente de IA especializado em analytics de RH utilizando o Databricks Genie Space para responder perguntas em linguagem natural sobre indicadores organizacionais.
-                        </p>
-                        <div class="project-stack">
-                            <code>SQL</code><code>Databricks</code><code>AI AGENTS</code>
-                        </div>
-                        <a href="https://github.com/GustavOnaga/AgenteIA_HR/blob/main/README.md" target="_blank" class="project-link">Ver documentação →</a>
-                    </td>
-
-                </tr>
-            </table>
-        </section>
-
-        <!-- SECTION 4: DIPLOMAS (LINHA DO TEMPO) -->
-        <section id="diplomas">
-            <h2>🎓 Formação Acadêmica</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-date">Concluído em 2026</span>
-                    <h3 class="timeline-title">Pós-graduação em Data Analytics</h3>
-                    <p class="timeline-institution">Faculdade de Informática e Administração Paulista (FIAP)</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">Concluído em 2025</span>
-                    <h3 class="timeline-title">Bacharelado em Engenharia Biomédica</h3>
-                    <p class="timeline-institution">Universidade Federal do ABC (UFABC)</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">Concluído em 2023</span>
-                    <h3 class="timeline-title">Bacharelado em Ciência e Tecnologia</h3>
-                    <p class="timeline-institution">Universidade Federal do ABC (UFABC)</p>
-                </div>
-            </div>
-        </section>
-
-<!-- SECTION 5: CERTIFICAÇÕES (ORDEM DECRESCENTE) -->
-        <section id="certificacoes">
-            <h2>📜 Certificações</h2>
-            <div class="carousel-wrapper">
-                <button class="carousel-btn btn-left" onclick="scrollCarousel(-1)">&#10094;</button>
-                
-                <div class="carousel" id="cert-carousel">
-                    <!-- Certificado 1 (Março 2026) -->
-                    <div class="cert-card">
-                        <span class="cert-date">03/2026</span>
-                        <img src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks">
-                        <div class="cert-title">Knowledge Badge - SQL Analytics on Databricks</div>
-                        <div class="cert-issuer">Databricks</div>
-                        <a href="https://credentials.databricks.com/fcb86abb-e7e4-4e86-bd66-564bfb1e0b4c" target="_blank" class="cert-link">Verificar Credencial ↗</a>
-                    </div>
-
-                    <!-- Certificado 2 (Março 2026) -->
-                    <div class="cert-card">
-                        <span class="cert-date">03/2026</span>
-                        <img src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks">
-                        <div class="cert-title">Academy Accreditation - Generative AI Fundamentals</div>
-                        <div class="cert-issuer">Databricks</div>
-                        <a href="https://credentials.databricks.com/e328c082-b4c3-4f80-bc27-f16189d48726" target="_blank" class="cert-link">Verificar Credencial ↗</a>
-                    </div>
-
-                    <!-- Certificado 3 (Fevereiro 2026) -->
-                    <div class="cert-card">
-                        <span class="cert-date">02/2026</span>
-                        <img src="https://cdn.simpleicons.org/dbt/FF694B" alt="dbt">
-                        <div class="cert-title">dbt Fundamentals</div>
-                        <div class="cert-issuer">dbt Labs</div>
-                        <a href="https://credentials.getdbt.com/48a1c9ed-0e8f-403b-9dd8-740337673817#acc.mcnfNRH2" target="_blank" class="cert-link">Verificar Credencial ↗</a>
-                    </div>
-
-                    <!-- Certificado 4 (Dezembro 2025) -->
-                    <div class="cert-card">
-                        <span class="cert-date">12/2025</span>
-                        <img src="https://cdn.simpleicons.org/udemy/A435F0" alt="Udemy">
-                        <div class="cert-title">DBT Core Completo - Modelagem e automação de dados</div>
-                        <div class="cert-issuer">Udemy</div>
-                        <a href="https://www.udemy.com/certificate/UC-c37dd5e5-e45f-4f01-a1c3-184ccc247f81/" target="_blank" class="cert-link">Verificar Credencial ↗</a>
-                    </div>
-
-                    <!-- Certificado 5 (Fevereiro 2025) -->
-                    <div class="cert-card">
-                        <span class="cert-date">02/2025</span>
-                        <img src="https://cdn.simpleicons.org/microsoftpowerbi/F2C811" alt="SQL">
-                        <div class="cert-title">SQL Impressionador</div>
-                        <div class="cert-issuer">Hashtag Treinamentos</div>
-                        <a href="https://portalhashtag.com/validacao-certificado/1740447742543x535515758810651400" target="_blank" class="cert-link">Verificar Credencial ↗</a>
-                    </div>
-                </div>
-
-                <button class="carousel-btn btn-right" onclick="scrollCarousel(1)">&#10095;</button>
-            </div>
-        </section>
-
-        <!-- FOOTER ATUALIZADO -->
-        <footer>
-            <p>Vamos construir algo incrível juntos?</p>
-            <div class="footer-subtitle">Sinta-se à vontade para entrar em contato para projetos, oportunidades ou apenas um café.</div>
-            
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/gustavo-onaga/" target="_blank" class="footer-btn">
-                    <img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn">
-                    LinkedIn
-                </a>
-                <a href="https://github.com/GustavOnaga" target="_blank" class="footer-btn">
-                    <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
-                    GitHub
-                </a>
-                <a href="mailto:gustavo.onaga1@gmail.com" class="footer-btn">
-                    <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="E-mail">
-                    E-mail
-                </a>
-            </div>
-
-            <div class="copyright">
-                &copy; 2026 Gustavo Onaga. Desenvolvido com HTML & CSS.
-            </div>
-        </footer>
-
-    </div>
-
-    <!-- Script para Controlar o Efeito das Setas no Carrossel -->
-    <script>
-        function scrollCarousel(direction) {
-            const carousel = document.getElementById('cert-carousel');
-            const cardWidth = carousel.querySelector('.cert-card').offsetWidth + 15; // Largura do card + gap
-            carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
-        }
-    </script>
 </body>
 </html>

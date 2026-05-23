@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #58a6ff;
+}
