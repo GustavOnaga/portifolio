@@ -1,9 +1,50 @@
-.certificacoes ul {
-    list-style: none;
-    padding: 0;
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.certificacoes li {
-    padding: 12px 0;
-    border-bottom: 1px solid #30363d;
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.cert-card {
+    min-width: 260px;
+    background: #161b22;
+    padding: 24px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.cert-card img {
+    width: 50px;
+    margin: 15px 0;
+}
+
+.cert-date {
+    color: #8b949e;
+    font-size: 0.85rem;
+}
+
+.cert-title {
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.cert-link {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.carousel-btn {
+    background: #21262d;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
 }

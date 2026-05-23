@@ -1,9 +1,57 @@
-<section class="certificacoes">
-    <h2>Certificações</h2>
+<section id="certificacoes">
+    <h2>📜 Certificações</h2>
 
-    <ul>
-        <li>Databricks Fundamentals</li>
-        <li>dbt Fundamentals</li>
-        <li>Google Data Analytics</li>
-    </ul>
+    <div class="carousel-wrapper">
+        <button class="carousel-btn btn-left" onclick="scrollCarousel(-1)">
+            &#10094;
+        </button>
+
+        <div class="carousel" id="cert-carousel">
+
+            <div class="cert-card">
+                <span class="cert-date">03/2026</span>
+                <img src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks">
+                <div class="cert-title">Knowledge Badge - SQL Analytics on Databricks</div>
+                <div class="cert-issuer">Databricks</div>
+                <a href="https://credentials.databricks.com/fcb86abb-e7e4-4e86-bd66-564bfb1e0b4c"
+                   target="_blank"
+                   class="cert-link">Verificar Credencial ↗</a>
+            </div>
+
+            <div class="cert-card">
+                <span class="cert-date">03/2026</span>
+                <img src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks">
+                <div class="cert-title">Academy Accreditation - Generative AI Fundamentals</div>
+                <div class="cert-issuer">Databricks</div>
+                <a href="https://credentials.databricks.com/e328c082-b4c3-4f80-bc27-f16189d48726"
+                   target="_blank"
+                   class="cert-link">Verificar Credencial ↗</a>
+            </div>
+
+            <div class="cert-card">
+                <span class="cert-date">02/2026</span>
+                <img src="https://cdn.simpleicons.org/dbt/FF694B" alt="dbt">
+                <div class="cert-title">dbt Fundamentals</div>
+                <div class="cert-issuer">dbt Labs</div>
+                <a href="https://credentials.getdbt.com/48a1c9ed-0e8f-403b-9dd8-740337673817#acc.mcnfNRH2"
+                   target="_blank"
+                   class="cert-link">Verificar Credencial ↗</a>
+            </div>
+
+            <div class="cert-card">
+                <span class="cert-date">12/2025</span>
+                <img src="https://cdn.simpleicons.org/udemy/A435F0" alt="Udemy">
+                <div class="cert-title">DBT Core Completo</div>
+                <div class="cert-issuer">Udemy</div>
+                <a href="https://www.udemy.com/certificate/UC-c37dd5e5-e45f-4f01-a1c3-184ccc247f81/"
+                   target="_blank"
+                   class="cert-link">Verificar Credencial ↗</a>
+            </div>
+
+        </div>
+
+        <button class="carousel-btn btn-right" onclick="scrollCarousel(1)">
+            &#10095;
+        </button>
+    </div>
 </section>
